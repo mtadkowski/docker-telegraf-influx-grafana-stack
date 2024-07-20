@@ -18,7 +18,7 @@ services:
       - '8086:8086'
     volumes:
       - ./:/imports
-      - influxdb_data:/var/lib/influxdb
+      - influxdb2_data:/var/lib/influxdb
 
   grafana:
     image: grafana/grafana:latest

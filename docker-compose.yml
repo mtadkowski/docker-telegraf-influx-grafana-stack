@@ -46,4 +46,4 @@ services:
 
 volumes:
   grafana_data: {}
-  influxdb_data: {}
+  influxdb2_data: {}

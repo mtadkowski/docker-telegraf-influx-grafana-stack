@@ -1,0 +1,13 @@
+version: '3.6'
+services:
+  influxdb:
+    image: influxdb:1.8-alpine
+    env_file: configuration_influx_only.env
+    ports:
+      - '8086:8086'
+    volumes:
+      - ./:/imports
+      - influxdb_data:/var/lib/influxdb
+
+volumes:
+  influxdb_data: {}
